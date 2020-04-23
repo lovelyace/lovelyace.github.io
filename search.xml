@@ -24,10 +24,10 @@
 <p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/151434.jpg" alt></p>
 <p>成功后，恭喜你获得三个月的office365 E5订阅</p>
 <p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/152640.jpg" alt></p>
-<h1 id="关于office365-e5调用api保持活跃度"><a href="#关于office365-e5调用api保持活跃度" class="headerlink" title="关于office365 e5调用api保持活跃度"></a>关于office365 e5调用api保持活跃度</h1><h2 id="开始之前-1"><a href="#开始之前-1" class="headerlink" title="开始之前"></a>开始之前</h2><p><strong>只要你不是开发人员，就不一定会免费自动续期</strong>，只能说续期的<strong>可能</strong>大了一点！</p>
+<h1 id="关于office365-E5调用api保持活跃度"><a href="#关于office365-E5调用api保持活跃度" class="headerlink" title="关于office365 E5调用api保持活跃度"></a>关于office365 E5调用api保持活跃度</h1><h2 id="开始之前-1"><a href="#开始之前-1" class="headerlink" title="开始之前"></a>开始之前</h2><p><strong>只要你不是开发人员，就不一定会免费自动续期</strong>，只能说续期的<strong>可能</strong>大了一点！</p>
 <h2 id="什么是api"><a href="#什么是api" class="headerlink" title="什么是api"></a>什么是api</h2><p>对于不想百度的小伙伴，我在这里提供了有关api的一些问题。</p>
 <p>api是指<em>软件系统不同组成部分衔接的约定</em>，也就是一个软件可以通过api接口访问另一个软件的相关程序。</p>
-<h2 id="为什么调用api有可能为office365-e5续期"><a href="#为什么调用api有可能为office365-e5续期" class="headerlink" title="为什么调用api有可能为office365 e5续期"></a>为什么调用api有可能为office365 e5续期</h2><p>之前我提到了，office365开发人员计划是用Microsoft提供给开发人员的福利，所以只要证明你是<em>“开发人员”</em>Microsoft就会为你续期。</p>
+<h2 id="为什么调用api有可能为office365-E5续期"><a href="#为什么调用api有可能为office365-E5续期" class="headerlink" title="为什么调用api有可能为office365 E5续期"></a>为什么调用api有可能为office365 E5续期</h2><p>之前我提到了，office365开发人员计划是用Microsoft提供给开发人员的福利，所以只要证明你是<em>“开发人员”</em>Microsoft就会为你续期。</p>
 <p>开发人员是来开发软件的！既然我们不是来为Microsoft开发软件的，那么必须或者至少需要模仿他们的做法，或者让Microsoft认为你在开发软件，而api，便是开发软件有可能用到的。</p>
 <p>api可以让开发人员在不需要打开Microsoft官网就可以开发软件成为可能。</p>
 <h2 id="关于使用OneIndex调用api"><a href="#关于使用OneIndex调用api" class="headerlink" title="关于使用OneIndex调用api"></a>关于使用OneIndex调用api</h2><p>在OneIndex普及的现在还能相信OneIndex的活跃度吗？</p>
@@ -96,6 +96,76 @@
       </categories>
       <tags>
         <tag>hello blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于使用postman调用api</title>
+    <url>/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/</url>
+    <content><![CDATA[<h1 id="关于使用postman调用api"><a href="#关于使用postman调用api" class="headerlink" title="关于使用postman调用api"></a>关于使用postman调用api</h1><p>关于office365 E5我已经再上一篇文章里提到了，在这里就不重复了（<a href="https://www.acebacg.top/2020/04/18/office365E5订阅/" target="_blank" rel="noopener">传送门</a>）</p>
+<h2 id="在Azure注册应用"><a href="#在Azure注册应用" class="headerlink" title="在Azure注册应用"></a>在Azure注册应用</h2><p>打开并登录Azure门户</p>
+<p>![](关于使用postman调用api/2020-04-23 172408.png)</p>
+<p>名称随意，重定向URL：</p>
+<pre><code class="url">https://app.getpostman.com/oauth2/callback</code></pre>
+<p>![](关于使用postman调用api/2020-04-23 172508.png)</p>
+<p>记住client_id和client_secret</p>
+<p>![](关于使用postman调用api/2020-04-23 173005.png)</p>
+<p>![](关于使用postman调用api/2020-04-23 173052.png)</p>
+<h2 id="将信息导入postman"><a href="#将信息导入postman" class="headerlink" title="将信息导入postman"></a>将信息导入postman</h2><p>![](关于使用postman调用api/2020-04-23 142115.png)</p>
+<p>点击Import–Import From Link导入</p>
+<pre><code class="json">https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></pre>
+<p>![](关于使用postman调用api/2020-04-23 144400.png)</p>
+<p>选择刚加入的Microsoft Graph environment。之后点击右侧眼睛图形，然后点击Edit</p>
+<p>![](关于使用postman调用api/2020-04-23 174201.png)</p>
+<p>输入信息</p>
+<pre><code>Callback URL: https://app.getpostman.com/oauth2/callback
+Auth URL: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
+Client ID: ?
+Client Secret: ?
+Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
+<p>接着导入</p>
+<pre><code class="json">https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json
+https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></pre>
+<p>![](关于使用postman调用api/2020-04-23 171518.png)</p>
+<p>会出现一个Microsoft Graph的集合</p>
+<p>![](关于使用postman调用api/2020-04-23 171724.png)</p>
+<p>点击Edit</p>
+<p>![](关于使用postman调用api/2020-04-23 171903.png)</p>
+<p>点击Get New Access Token，输入信息。</p>
+<pre><code>Token Name: ?
+Callback URL: https://app.getpostman.com/oauth2/callback
+Auth URL: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
+Client ID: ?
+Client Secret: ?
+Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
+<p>![](关于使用postman调用api/2020-04-23 173756.png)</p>
+<p>点击Request Token，登录office365 E5账号</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>选择Microsoft Graph集合–On Behalf of a User集合–Mail集合–Get my messages–Authorization</p>
+<p>![](关于使用postman调用api/2020-04-23 175117.png)</p>
+<p>更改type为OAuth 2.0</p>
+<p>![](关于使用postman调用api/2020-04-23 175306.png)</p>
+<p>依次点击Get New Access Token–Request Token–登录–Use Token–Send</p>
+<p>如果你在下方给出的信息<strong>不是</strong></p>
+<p>![](关于使用postman调用api/2020-04-23 175740.png)</p>
+<p>那么恭喜你，postman已经与Microsoft Graph通过api相连</p>
+<h2 id="本文参考"><a href="#本文参考" class="headerlink" title="本文参考"></a>本文参考</h2><p><a href="https://docs.microsoft.com/zh-cn/graph/use-postman?context=graph%2Fapi%2F1.0&view=graph-rest-1.0" target="_blank" rel="noopener">结合使用 Postman 和 Microsoft Graph API</a></p>
+<p><a href="https://fungit.org/2020/Office365-e5-Try-to-Stay-Active-Using-postman-Call-api/" target="_blank" rel="noopener">office365-e5使用postman调用api试保持活跃</a></p>
+<p><a href="https://github.com/chenxizhang/office365dev/blob/master/docs/graph-tools.md" target="_blank" rel="noopener">通过第三方工具体验Micrsooft Graph</a></p>
+<p>以上网站均为<strong>参考</strong>内容。</p>
+<hr>
+<ul>
+<li><strong>本文作者：</strong>烟火</li>
+<li><strong>本文出处：</strong><a href="https://www.acebacg.top/" target="_blank" rel="noopener">lovelyace</a></li>
+<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>office</tag>
       </tags>
   </entry>
 </search>
