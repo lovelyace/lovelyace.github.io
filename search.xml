@@ -105,14 +105,14 @@
 <h2 id="在Azure注册应用"><a href="#在Azure注册应用" class="headerlink" title="在Azure注册应用"></a>在Azure注册应用</h2><p>打开并登录Azure门户</p>
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172408.jpg" alt></p>
 <p>名称随意，重定向URL：</p>
-<pre><code class="url">https://app.getpostman.com/oauth2/callback</code></pre>
+<p><code>https://app.getpostman.com/oauth2/callback</code></p>
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172508.jpg" alt></p>
 <p>记住client_id和client_secret</p>
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173005.jpg" alt></p>
-<p>![](关于使用postman调用api/2020-04-23 173052.jpg)</p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173052.jpg" alt></p>
 <h2 id="将信息导入postman"><a href="#将信息导入postman" class="headerlink" title="将信息导入postman"></a>将信息导入postman</h2><p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/142115.jpg" alt></p>
 <p>点击Import–Import From Link导入</p>
-<pre><code class="json">https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></pre>
+<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></p>
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/144400.jpg" alt></p>
 <p>选择刚加入的Microsoft Graph environment。之后点击右侧眼睛图形，然后点击Edit</p>
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/174201.jpg" alt></p>
@@ -123,9 +123,8 @@ Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
 Client ID: ?
 Client Secret: ?
 Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
-<p>接着导入</p>
-<pre><code class="json">https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json
-https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></pre>
+<p>接着导入(Import–Import From Link)</p>
+<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json</code><br><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></p>
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171518.jpg" alt></p>
 <p>会出现一个Microsoft Graph的集合</p>
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171724.jpg" alt></p>
@@ -166,6 +165,37 @@ Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</
       </categories>
       <tags>
         <tag>office</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub与私人博客搭建</title>
+    <url>/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="GitHub与私人博客搭建"><a href="#GitHub与私人博客搭建" class="headerlink" title="GitHub与私人博客搭建"></a>GitHub与私人博客搭建</h1><p>GitHub是全球最大的开发人员网站，为用户提供了丰富的功能及资源，那么GitHub在网站搭建上为我们提供了什么功能呢？</p>
+<h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p>一个GitHub账号</p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>登录GitHub，点击右上角的“+”，之后点击New repository</p>
+<p><img src="/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/100115.png" alt></p>
+<p>输入<code>name.github.io</code>(name为GitHub账号昵称)</p>
+<p><img src="/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/102352.png" alt></p>
+<p>点击setting</p>
+<p><img src="/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/103118.png" alt></p>
+<p>向下翻到GitHub Pages</p>
+<p><img src="/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/103439.png" alt></p>
+<p>绿色方框内的网址便是你的博客地址，选择Choose a theme可以在GitHub提供的主题中选取一个主题。更改Custom domain可以更改你的域名。</p>
+<h2 id="评价"><a href="#评价" class="headerlink" title="评价"></a>评价</h2><p>GitHub提供的网站虽然过程简单，但写文章的话很不友好，除非习惯了使用HTML写文章。不过可以通过hexo、jekyll等第三方软件进行编辑，然后上传到GitHub，让你的博客更加美观。</p>
+<p>不过免费带来的其他问题随之而来，<strong>GitHub免费账户的项目是开源的！！！</strong>别人甚至可以那你的文件进行二次创作，或者更改、恶搞。</p>
+<hr>
+<ul>
+<li><strong>本文作者：</strong>烟火</li>
+<li><strong>本文出处：</strong><a href="https://www.acebacg.top/" target="_blank" rel="noopener">lovelyace</a></li>
+<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
       </tags>
   </entry>
 </search>

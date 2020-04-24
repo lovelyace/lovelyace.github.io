@@ -5,16 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>关于使用postman调用api - lovelyace</title>
+    <title>GitHub与私人博客搭建 - lovelyace</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="acebacg,"> 
-    <meta name="description" content="关于使用postman调用api关于office365 E5我已经再上一篇文章里提到了，在这里就不重复了（传送门）
-在Azure注册应用打开并登录Azure门户
-
-名称随意，重定向URL：
-http,"> 
+    <meta name="description" content="GitHub与私人博客搭建GitHub是全球最大的开发人员网站，为用户提供了丰富的功能及资源，那么GitHub在网站搭建上为我们提供了什么功能呢？
+准备工具一个GitHub账号
+开始登录GitHub,"> 
     <meta name="author" content="烟火"> 
     <link rel="alternative" href="atom.xml" title="lovelyace" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -44,7 +42,7 @@ http,">
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://lovelyace.github.io"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">关于使用postman调用api</h3>
+    <h3 class="subtitle">GitHub与私人博客搭建</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -59,66 +57,28 @@ http,">
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">关于使用postman调用api</h1>
+        <h1 class="title">GitHub与私人博客搭建</h1>
         <div class="stuff">
             <span>四月 23, 2020</span>
             
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/office/" rel="tag">office</a></li></ul>
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/blog/" rel="tag">blog</a></li></ul>
 
 
         </div>
         <div class="content markdown">
-            <h1 id="关于使用postman调用api"><a href="#关于使用postman调用api" class="headerlink" title="关于使用postman调用api"></a>关于使用postman调用api</h1><p>关于office365 E5我已经再上一篇文章里提到了，在这里就不重复了（<a href="https://www.acebacg.top/2020/04/18/office365E5订阅/" target="_blank" rel="noopener">传送门</a>）</p>
-<h2 id="在Azure注册应用"><a href="#在Azure注册应用" class="headerlink" title="在Azure注册应用"></a>在Azure注册应用</h2><p>打开并登录Azure门户</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172408.jpg" alt></p>
-<p>名称随意，重定向URL：</p>
-<p><code>https://app.getpostman.com/oauth2/callback</code></p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172508.jpg" alt></p>
-<p>记住client_id和client_secret</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173005.jpg" alt></p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173052.jpg" alt></p>
-<h2 id="将信息导入postman"><a href="#将信息导入postman" class="headerlink" title="将信息导入postman"></a>将信息导入postman</h2><p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/142115.jpg" alt></p>
-<p>点击Import–Import From Link导入</p>
-<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/144400.jpg" alt></p>
-<p>选择刚加入的Microsoft Graph environment。之后点击右侧眼睛图形，然后点击Edit</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/174201.jpg" alt></p>
-<p>输入信息</p>
-<pre><code>Callback URL: https://app.getpostman.com/oauth2/callback
-Auth URL: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
-Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
-Client ID: ?
-Client Secret: ?
-Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
-<p>接着导入(Import–Import From Link)</p>
-<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json</code><br><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171518.jpg" alt></p>
-<p>会出现一个Microsoft Graph的集合</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171724.jpg" alt></p>
-<p>点击Edit</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171903.jpg" alt></p>
-<p>点击Get New Access Token，输入信息。</p>
-<pre><code>Token Name: ?
-Callback URL: https://app.getpostman.com/oauth2/callback
-Auth URL: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
-Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
-Client ID: ?
-Client Secret: ?
-Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173756.jpg" alt></p>
-<p>点击Request Token，登录office365 E5账号</p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>选择Microsoft Graph集合–On Behalf of a User集合–Mail集合–Get my messages–Authorization</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175117.jpg" alt></p>
-<p>更改type为OAuth 2.0</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175306.jpg" alt></p>
-<p>依次点击Get New Access Token–Request Token–登录–Use Token–Send</p>
-<p>如果你在下方给出的信息<strong>不是</strong></p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175740.jpg" alt></p>
-<p>那么恭喜你，postman已经与Microsoft Graph通过api相连</p>
-<h2 id="本文参考"><a href="#本文参考" class="headerlink" title="本文参考"></a>本文参考</h2><p><a href="https://docs.microsoft.com/zh-cn/graph/use-postman?context=graph%2Fapi%2F1.0&view=graph-rest-1.0" target="_blank" rel="noopener">结合使用 Postman 和 Microsoft Graph API</a></p>
-<p><a href="https://fungit.org/2020/Office365-e5-Try-to-Stay-Active-Using-postman-Call-api/" target="_blank" rel="noopener">office365-e5使用postman调用api试保持活跃</a></p>
-<p><a href="https://github.com/chenxizhang/office365dev/blob/master/docs/graph-tools.md" target="_blank" rel="noopener">通过第三方工具体验Micrsooft Graph</a></p>
-<p>以上网站均为<strong>参考</strong>内容。</p>
+            <h1 id="GitHub与私人博客搭建"><a href="#GitHub与私人博客搭建" class="headerlink" title="GitHub与私人博客搭建"></a>GitHub与私人博客搭建</h1><p>GitHub是全球最大的开发人员网站，为用户提供了丰富的功能及资源，那么GitHub在网站搭建上为我们提供了什么功能呢？</p>
+<h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p>一个GitHub账号</p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>登录GitHub，点击右上角的“+”，之后点击New repository</p>
+<p><img src="/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/100115.png" alt></p>
+<p>输入<code>name.github.io</code>(name为GitHub账号昵称)</p>
+<p><img src="/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/102352.png" alt></p>
+<p>点击setting</p>
+<p><img src="/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/103118.png" alt></p>
+<p>向下翻到GitHub Pages</p>
+<p><img src="/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/103439.png" alt></p>
+<p>绿色方框内的网址便是你的博客地址，选择Choose a theme可以在GitHub提供的主题中选取一个主题。更改Custom domain可以更改你的域名。</p>
+<h2 id="评价"><a href="#评价" class="headerlink" title="评价"></a>评价</h2><p>GitHub提供的网站虽然过程简单，但写文章的话很不友好，除非习惯了使用HTML写文章。不过可以通过hexo、jekyll等第三方软件进行编辑，然后上传到GitHub，让你的博客更加美观。</p>
+<p>不过免费带来的其他问题随之而来，<strong>GitHub免费账户的项目是开源的！！！</strong>别人甚至可以那你的文件进行二次创作，或者更改、恶搞。</p>
 <hr>
 <ul>
 <li><strong>本文作者：</strong>烟火</li>
@@ -165,7 +125,7 @@ Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</
     </div>
     
         <div class='side'>
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于使用postman调用api"><span class="toc-number">1.</span> <span class="toc-text">关于使用postman调用api</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#在Azure注册应用"><span class="toc-number">1.1.</span> <span class="toc-text">在Azure注册应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将信息导入postman"><span class="toc-number">1.2.</span> <span class="toc-text">将信息导入postman</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#测试"><span class="toc-number">1.3.</span> <span class="toc-text">测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本文参考"><span class="toc-number">1.4.</span> <span class="toc-text">本文参考</span></a></li></ol></li></ol>	
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub与私人博客搭建"><span class="toc-number">1.</span> <span class="toc-text">GitHub与私人博客搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工具"><span class="toc-number">1.1.</span> <span class="toc-text">准备工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开始"><span class="toc-number">1.2.</span> <span class="toc-text">开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#评价"><span class="toc-number">1.3.</span> <span class="toc-text">评价</span></a></li></ol></li></ol>	
         </div>
     
 </div>
