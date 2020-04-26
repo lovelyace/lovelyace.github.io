@@ -180,7 +180,7 @@ Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</
 <p><img src="/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/103118.png" alt></p>
 <p>向下翻到GitHub Pages</p>
 <p><img src="/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/103439.png" alt></p>
-<p>绿色方框内的网址便是你的博客地址，选择Choose a theme可以在GitHub提供的主题中选取一个主题。更改Custom domain可以更改你的域名。</p>
+<p>绿色方框内的网址便是你的博客地址，选择Choose a theme可以在GitHub提供的主题中选取一个主题。</p>
 <h2 id="评价"><a href="#评价" class="headerlink" title="评价"></a>评价</h2><p>GitHub提供的网站虽然过程简单，但写文章的话很不友好，除非习惯了使用HTML写文章。不过可以通过hexo、jekyll等第三方软件进行编辑，然后上传到GitHub，让你的博客更加美观。</p>
 <p>不过免费带来的其他问题随之而来，<strong>GitHub免费账户的项目是开源的！！！</strong>别人甚至可以那你的文件进行二次创作，或者更改、恶搞。</p>
 <p>如果你放心自己的项目处于开源状态，那么下一步：<a href="https://www.acebacg.top/404/" target="_blank" rel="noopener">关于使用hexo为GitHub个人博客润色</a></p>
@@ -201,9 +201,72 @@ Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</
       </tags>
   </entry>
   <entry>
-    <title>关于使用hexo为GitHub个人博客润色</title>
+    <title>使用hexo为个人博客润色</title>
     <url>/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/</url>
-    <content><![CDATA[<hr>
+    <content><![CDATA[<h1 id="使用hexo为个人博客润色"><a href="#使用hexo为个人博客润色" class="headerlink" title="使用hexo为个人博客润色"></a>使用hexo为个人博客润色</h1><h2 id="关于hexo"><a href="#关于hexo" class="headerlink" title="关于hexo"></a>关于hexo</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a></p>
+<p>现在的静态博客框架有很多，例如Jekyll、Simple、Pelican等。它们各有利弊，但本篇只介绍hexo静态博客框架。</p>
+<p>hexo基于Node.js，支持markdown语法，有多种多样的主题可供选择。</p>
+<h2 id="环境布置"><a href="#环境布置" class="headerlink" title="环境布置"></a>环境布置</h2><h3 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h3><h4 id="下载所需软件"><a href="#下载所需软件" class="headerlink" title="下载所需软件"></a>下载所需软件</h4><ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>（Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本）</li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
+</ul>
+<p>大陆地区请前往<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝 Git for Windows 镜像</a>、<a href="https://npm.taobao.org/mirrors/node" target="_blank" rel="noopener">淘宝 Node.js 镜像</a>下载</p>
+<h4 id="安装Git和Node-js"><a href="#安装Git和Node-js" class="headerlink" title="安装Git和Node.js"></a>安装Git和Node.js</h4><h5 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h5><blockquote>
+<ul>
+<li><p>Windows：下载并安装 <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git</a>.</p>
+</li>
+<li><p>Mac：使用 <a href="http://mxcl.github.com/homebrew/" target="_blank" rel="noopener">Homebrew</a>, <a href="http://www.macports.org/" target="_blank" rel="noopener">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="noopener">安装程序</a>。</p>
+</li>
+<li><p>Linux (Ubuntu, Debian)：<code>sudo apt-get install git-core</code></p>
+</li>
+<li><p>Linux (Fedora, Red Hat, CentOS)：<code>sudo yum install git-core</code></p>
+</li>
+</ul>
+</blockquote>
+<h5 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h5><blockquote>
+<ul>
+<li>Windows：下载并安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
+<li>Mac：使用 <a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a> 或 <a href="http://www.macports.org/" target="_blank" rel="noopener">MacPorts</a> 安装。</li>
+<li>Linux（DEB/RPM-based）：从 <a href="https://github.com/nodesource/distributions" target="_blank" rel="noopener">NodeSource</a> 安装。</li>
+<li>其它：使用相应的软件包管理器进行安装，可以参考由 Node.js 提供的 <a href="https://nodejs.org/en/download/package-manager/" target="_blank" rel="noopener">指导</a></li>
+</ul>
+</blockquote>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>打开cmd，输入</p>
+<pre><code>$ node -v
+$ npm -v</code></pre><p>检查node是否安装成功（安装成功会显示当前版本号），确认无误后输入</p>
+<pre><code>$ npm install -g hexo-cli</code></pre><p>选择一个你希望作为储存博客的文件夹（<strong>请使用英文名称</strong>），右键打开Git Bash Her，输入</p>
+<pre><code>$ hexo init  初始化文件夹</code></pre><p>然后输入</p>
+<pre><code>$ npm install
+$ hexo s
+$ hexo g</code></pre><p>这是打开浏览器输入网站<a href="http://localhost:4000/会进入一个网站，那么安装成功" target="_blank" rel="noopener">http://localhost:4000/会进入一个网站，那么安装成功</a></p>
+<h3 id="连接到GitHub"><a href="#连接到GitHub" class="headerlink" title="连接到GitHub"></a>连接到GitHub</h3><h4 id="配置ssh密钥"><a href="#配置ssh密钥" class="headerlink" title="配置ssh密钥"></a>配置ssh密钥</h4><p>接上一步，Ctrl+C取向本地预览，输入</p>
+<pre><code>$ cd ~/. ssh  检查本地有没有ssh密钥</code></pre><p>没有ssh密钥的话输入</p>
+<pre><code>$ git config --global user.name &quot;GitHub用户名&quot;
+$ git config --global user.email &quot;GitHub注册邮箱&quot;
+$ ssh-keygen -t rsa -C &quot;GitHub注册邮箱&quot;</code></pre><p>会提示输入密码，但不建议设置密码，直接回车即可</p>
+<p>打开C:\Users\用户名\ .ssh文件夹，用记事本打开id_rsa.pub文件，复制全部内容</p>
+<p>登录到GitHub，选择setting–SSH and GPG keys–New SSH key</p>
+<p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/125845.png" alt></p>
+<p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/130046.png" alt></p>
+<p>Title随意，将ssh密钥复制到Key栏</p>
+<p>检查链接是否成功</p>
+<pre><code>$ ssh -T git@github.com</code></pre><p>输入yes，回车，如果出现</p>
+<pre><code>Hi GitHub用户名! You&#39;ve successfully authenticated, but GitHub does not provide shell access</code></pre><p>则ssh密钥配置成功</p>
+<h4 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h4><p>用记事本打开博客根目录下的_config.yml</p>
+<p>更改最后的数据（<strong>冒号后有空格！！！</strong>）</p>
+<pre><code># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: GitHub仓库地址（使用ssh）
+  branch: master</code></pre><hr>
+<h5 id="repo获取"><a href="#repo获取" class="headerlink" title="repo获取"></a>repo获取</h5><p>登录GitHub，打开在GitHub创建的博客仓库</p>
+<p>点开文件上方绿色的Clone or download</p>
+<p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/131912.png" alt></p>
+<p><strong>使用ssh！！！</strong>之后点击地址栏右侧的图标复制</p>
+<hr>
+<h2 id="安装hexo-deployer-git自动部署发布工具"><a href="#安装hexo-deployer-git自动部署发布工具" class="headerlink" title="安装hexo-deployer-git自动部署发布工具"></a>安装<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>自动部署发布工具</h2><p>在本地博客文件夹根目录打开Git Bash Here，输入</p>
+<pre><code>npm install hexo-deployer-git  --save</code></pre><hr>
 <ul>
 <li><strong>本文作者：</strong>烟火</li>
 <li><strong>本文出处：</strong><a href="https://www.acebacg.top/" target="_blank" rel="noopener">lovelyace</a></li>
@@ -211,5 +274,105 @@ Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</
 </ul>
 <hr>
 ]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于使用hexo为GitHub个人博客润色</title>
+    <url>/2020/04/26/%E4%BD%BF%E7%94%A8hexo%E4%B8%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/</url>
+    <content><![CDATA[<h1 id="关于使用hexo为GitHub个人博客润色"><a href="#关于使用hexo为GitHub个人博客润色" class="headerlink" title="关于使用hexo为GitHub个人博客润色"></a>关于使用hexo为GitHub个人博客润色</h1><p>首先需要GitHub仓库，没有请先阅读<a href="https://www.acebacg.top/2020/04/23/GitHub与私人博客搭建/" target="_blank" rel="noopener">GitHub与私人博客搭建</a></p>
+<h2 id="关于hexo"><a href="#关于hexo" class="headerlink" title="关于hexo"></a>关于hexo</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a></p>
+<p>现在的静态博客框架有很多，例如Jekyll、Simple、Pelican等。它们各有利弊，但本篇只介绍hexo静态博客框架。</p>
+<p>hexo基于Node.js，支持markdown语法，有多种多样的主题可供选择。</p>
+<h2 id="环境布置"><a href="#环境布置" class="headerlink" title="环境布置"></a>环境布置</h2><h3 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h3><h4 id="下载所需软件"><a href="#下载所需软件" class="headerlink" title="下载所需软件"></a>下载所需软件</h4><ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>（Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本）</li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
+</ul>
+<p>大陆地区请前往<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝 Git for Windows 镜像</a>、<a href="https://npm.taobao.org/mirrors/node" target="_blank" rel="noopener">淘宝 Node.js 镜像</a>下载</p>
+<h4 id="安装Git和Node-js"><a href="#安装Git和Node-js" class="headerlink" title="安装Git和Node.js"></a>安装Git和Node.js</h4><h5 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h5><blockquote>
+<ul>
+<li><p>Windows：下载并安装 <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git</a>.</p>
+</li>
+<li><p>Mac：使用 <a href="http://mxcl.github.com/homebrew/" target="_blank" rel="noopener">Homebrew</a>, <a href="http://www.macports.org/" target="_blank" rel="noopener">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="noopener">安装程序</a>。</p>
+</li>
+<li><p>Linux (Ubuntu, Debian)：<code>sudo apt-get install git-core</code></p>
+</li>
+<li><p>Linux (Fedora, Red Hat, CentOS)：<code>sudo yum install git-core</code></p>
+</li>
+</ul>
+</blockquote>
+<h5 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h5><blockquote>
+<ul>
+<li>Windows：下载并安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
+<li>Mac：使用 <a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a> 或 <a href="http://www.macports.org/" target="_blank" rel="noopener">MacPorts</a> 安装。</li>
+<li>Linux（DEB/RPM-based）：从 <a href="https://github.com/nodesource/distributions" target="_blank" rel="noopener">NodeSource</a> 安装。</li>
+<li>其它：使用相应的软件包管理器进行安装，可以参考由 Node.js 提供的 <a href="https://nodejs.org/en/download/package-manager/" target="_blank" rel="noopener">指导</a></li>
+</ul>
+</blockquote>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>打开cmd，输入</p>
+<pre><code>$ node -v
+$ npm -v</code></pre><p>检查node是否安装成功（安装成功会显示当前版本号），确认无误后输入</p>
+<pre><code>$ npm install -g hexo-cli</code></pre><p>选择一个你希望作为储存博客的文件夹（<strong>请使用英文名称</strong>），右键打开Git Bash Here，输入</p>
+<pre><code>$ hexo init  初始化文件夹</code></pre><p>然后输入</p>
+<pre><code>$ npm install
+$ hexo s
+$ hexo g</code></pre><p>这是打开浏览器输入网站<a href="http://localhost:4000/会进入一个网站，那么安装成功" target="_blank" rel="noopener">http://localhost:4000/会进入一个网站，那么安装成功</a></p>
+<h2 id="连接到GitHub"><a href="#连接到GitHub" class="headerlink" title="连接到GitHub"></a>连接到GitHub</h2><h3 id="配置ssh密钥"><a href="#配置ssh密钥" class="headerlink" title="配置ssh密钥"></a>配置ssh密钥</h3><p>接上一步，Ctrl+C取向本地预览，输入</p>
+<pre><code>$ cd ~/. ssh  检查本地有没有ssh密钥</code></pre><p>没有ssh密钥的话输入</p>
+<pre><code>$ git config --global user.name &quot;GitHub用户名&quot;
+$ git config --global user.email &quot;GitHub注册邮箱&quot;
+$ ssh-keygen -t rsa -C &quot;GitHub注册邮箱&quot;</code></pre><p>会提示输入密码，但不建议设置密码，直接回车即可</p>
+<p>打开C:\Users\用户名\ .ssh文件夹，用记事本打开id_rsa.pub文件，复制全部内容</p>
+<p>登录到GitHub，选择setting–SSH and GPG keys–New SSH key</p>
+<p><img src="/2020/04/26/%E4%BD%BF%E7%94%A8hexo%E4%B8%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/125845.png" alt></p>
+<p><img src="/2020/04/26/%E4%BD%BF%E7%94%A8hexo%E4%B8%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/130046.png" alt></p>
+<p>Title随意，将ssh密钥复制到Key栏</p>
+<p>检查链接是否成功</p>
+<pre><code>$ ssh -T git@github.com</code></pre><p>输入yes，回车，如果出现</p>
+<pre><code>Hi GitHub用户名! You&#39;ve successfully authenticated, but GitHub does not provide shell access</code></pre><p>则ssh密钥配置成功</p>
+<h3 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h3><p>用记事本打开博客根目录下的_config.yml</p>
+<p>更改最后的数据（<strong>冒号后有空格！！！</strong>）</p>
+<pre><code># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: GitHub仓库地址（使用ssh）
+  branch: master</code></pre><hr>
+<h4 id="repo获取"><a href="#repo获取" class="headerlink" title="repo获取"></a>repo获取</h4><p>登录GitHub，打开在GitHub创建的博客仓库</p>
+<p>点开文件上方绿色的Clone or download</p>
+<p><img src="/2020/04/26/%E4%BD%BF%E7%94%A8hexo%E4%B8%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/131912.png" alt></p>
+<p><strong>使用ssh！！！</strong>之后点击地址栏右侧的图标复制</p>
+<hr>
+<h2 id="安装hexo-deployer-git自动部署发布工具"><a href="#安装hexo-deployer-git自动部署发布工具" class="headerlink" title="安装hexo-deployer-git自动部署发布工具"></a>安装<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>自动部署发布工具</h2><p>在本地博客文件夹根目录打开Git Bash（或cmd），输入</p>
+<pre><code>npm install hexo-deployer-git  --save</code></pre><h2 id="发布到GitHub"><a href="#发布到GitHub" class="headerlink" title="发布到GitHub"></a>发布到GitHub</h2><p>在Git Bash（或cmd）中输入</p>
+<pre><code>$ hexo d -g</code></pre><h1 id="使用自定义域名"><a href="#使用自定义域名" class="headerlink" title="使用自定义域名"></a>使用自定义域名</h1><h2 id="解析域名到你的博客地址"><a href="#解析域名到你的博客地址" class="headerlink" title="解析域名到你的博客地址"></a>解析域名到你的博客地址</h2><p>打开你的域名控制台，添加CNAME记录指向你的博客域名</p>
+<p><img src="/2020/04/26/%E4%BD%BF%E7%94%A8hexo%E4%B8%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/134044.png" alt="例"></p>
+<h2 id="在GitHub中添加你的域名"><a href="#在GitHub中添加你的域名" class="headerlink" title="在GitHub中添加你的域名"></a>在GitHub中添加你的域名</h2><p>在GitHub中打开项目，选择setting，向下翻到GitHub Pages</p>
+<p>在Custom domain中输入你的域名地址<a href="http://www.example.com" target="_blank" rel="noopener">www.example.com</a></p>
+<p><img src="/2020/04/26/%E4%BD%BF%E7%94%A8hexo%E4%B8%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/134632.png" alt></p>
+<h2 id="在本地博客文件夹添加CNAME记录"><a href="#在本地博客文件夹添加CNAME记录" class="headerlink" title="在本地博客文件夹添加CNAME记录"></a>在本地博客文件夹添加CNAME记录</h2><p>打开本地博客根目录–source创建一个文本文档</p>
+<p>输入域名地址<a href="http://www.example.com" target="_blank" rel="noopener">www.example.com</a></p>
+<p>保存，将文本文档改名为CNAME（去掉.txt的后缀）</p>
+<h1 id="书写博客"><a href="#书写博客" class="headerlink" title="书写博客"></a>书写博客</h1><h2 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h2><p>在本地博客文件夹根目录打开Git Bash（或cmd）输入</p>
+<pre><code>$ hexo new 文章名称</code></pre><p>编辑本地博客文件夹根目录–source–_posts–文章名称.md文件</p>
+<h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><p>在本地博客文件夹根目录打开Git Bash（或cmd）输入</p>
+<pre><code>$ hexo d -g</code></pre><hr>
+<ul>
+<li><strong>本文作者：</strong>烟火</li>
+<li><strong>本文出处：</strong><a href="https://www.acebacg.top/" target="_blank" rel="noopener">lovelyace</a></li>
+<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
   </entry>
 </search>
