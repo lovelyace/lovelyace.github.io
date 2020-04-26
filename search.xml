@@ -201,9 +201,9 @@ Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</
       </tags>
   </entry>
   <entry>
-    <title>使用hexo为个人博客润色</title>
+    <title>关于使用hexo为GitHub个人博客润色</title>
     <url>/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/</url>
-    <content><![CDATA[<h1 id="使用hexo为个人博客润色"><a href="#使用hexo为个人博客润色" class="headerlink" title="使用hexo为个人博客润色"></a>使用hexo为个人博客润色</h1><h2 id="关于hexo"><a href="#关于hexo" class="headerlink" title="关于hexo"></a>关于hexo</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a></p>
+    <content><![CDATA[<h1 id="关于使用hexo为GitHub个人博客润色"><a href="#关于使用hexo为GitHub个人博客润色" class="headerlink" title="关于使用hexo为GitHub个人博客润色"></a>关于使用hexo为GitHub个人博客润色</h1><h2 id="关于hexo"><a href="#关于hexo" class="headerlink" title="关于hexo"></a>关于hexo</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a></p>
 <p>现在的静态博客框架有很多，例如Jekyll、Simple、Pelican等。它们各有利弊，但本篇只介绍hexo静态博客框架。</p>
 <p>hexo基于Node.js，支持markdown语法，有多种多样的主题可供选择。</p>
 <h2 id="环境布置"><a href="#环境布置" class="headerlink" title="环境布置"></a>环境布置</h2><h3 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h3><h4 id="下载所需软件"><a href="#下载所需软件" class="headerlink" title="下载所需软件"></a>下载所需软件</h4><ul>
