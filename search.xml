@@ -62,76 +62,6 @@
       </tags>
   </entry>
   <entry>
-    <title>office365 E5订阅</title>
-    <url>/2020/04/18/office365E5%E8%AE%A2%E9%98%85/</url>
-    <content><![CDATA[<h1 id="office365-E5订阅"><a href="#office365-E5订阅" class="headerlink" title="office365 E5订阅"></a>office365 E5订阅</h1><h2 id="Office-365-开发人员计划"><a href="#Office-365-开发人员计划" class="headerlink" title="Office 365 开发人员计划"></a>Office 365 开发人员计划</h2><p>Microsoft为了给开发人员提供更好的开发环境，发布了<a href="https://developer.microsoft.com/zh-cn/office" target="_blank" rel="noopener">Office 365 开发人员计划</a>。在该计划中，会为开发者免费提供长达90天的E5订阅（目前）。</p>
-<p>该订阅创造了一个虚拟的沙盒环境（独立于外部网络环境）。在这个虚拟的沙盒中，Microsoft提供了许许多多的软件和开发环境。这便是office365 E5订阅。</p>
-<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/143345.jpg" alt></p>
-<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/143404.jpg" alt></p>
-<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/143225.jpg" alt></p>
-<h2 id="开始之前"><a href="#开始之前" class="headerlink" title="开始之前"></a>开始之前</h2><h3 id="需要准备的"><a href="#需要准备的" class="headerlink" title="需要准备的"></a>需要准备的</h3><ul>
-<li>一个Microsoft个人账号</li>
-<li>一个支持你浏览google（例）的方法</li>
-<li>一个可以正常使用的手机号（用于接收验证码）</li>
-<li>一个支持你看懂英文的方法（自带或者扩充）</li>
-</ul>
-<h2 id="怎么获得office365-E5订阅"><a href="#怎么获得office365-E5订阅" class="headerlink" title="怎么获得office365 E5订阅"></a>怎么获得office365 E5订阅</h2><p>打开<a href="https://developer.microsoft.com/zh-cn/office" target="_blank" rel="noopener">Office 365 开发人员计划</a>登陆并填写基本信息，全部勾选点击下一步</p>
-<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/144444.jpg" alt></p>
-<p>勾选你需要的产品功能（建议产品栏全部勾选），下一步</p>
-<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/144730.jpg" alt></p>
-<p>点击设置订阅，继续填写，然后继续</p>
-<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/145624.jpg" alt></p>
-<p>输入电话号码，继续（住：此时你需要可以访问google（例）的网络）</p>
-<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/151434.jpg" alt></p>
-<p>成功后，恭喜你获得三个月的office365 E5订阅</p>
-<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/152640.jpg" alt></p>
-<h1 id="关于office365-E5调用api保持活跃度"><a href="#关于office365-E5调用api保持活跃度" class="headerlink" title="关于office365 E5调用api保持活跃度"></a>关于office365 E5调用api保持活跃度</h1><h2 id="开始之前-1"><a href="#开始之前-1" class="headerlink" title="开始之前"></a>开始之前</h2><p><strong>只要你不是开发人员，就不一定会免费自动续期</strong>，只能说续期的<strong>可能</strong>大了一点！</p>
-<h2 id="什么是api"><a href="#什么是api" class="headerlink" title="什么是api"></a>什么是api</h2><p>对于不想百度的小伙伴，我在这里提供了有关api的一些问题。</p>
-<p>api是指<em>软件系统不同组成部分衔接的约定</em>，也就是一个软件可以通过api接口访问另一个软件的相关程序。</p>
-<h2 id="为什么调用api有可能为office365-E5续期"><a href="#为什么调用api有可能为office365-E5续期" class="headerlink" title="为什么调用api有可能为office365 E5续期"></a>为什么调用api有可能为office365 E5续期</h2><p>之前我提到了，office365开发人员计划是用Microsoft提供给开发人员的福利，所以只要证明你是<em>“开发人员”</em>Microsoft就会为你续期。</p>
-<p>开发人员是来开发软件的！既然我们不是来为Microsoft开发软件的，那么必须或者至少需要模仿他们的做法，或者让Microsoft认为你在开发软件，而api，便是开发软件有可能用到的。</p>
-<p>api可以让开发人员在不需要打开Microsoft官网就可以开发软件成为可能。</p>
-<h2 id="关于使用OneIndex调用api"><a href="#关于使用OneIndex调用api" class="headerlink" title="关于使用OneIndex调用api"></a>关于使用OneIndex调用api</h2><p>在OneIndex普及的现在还能相信OneIndex的活跃度吗？</p>
-<h3 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h3><p>虚拟主机（php&gt;5.5）、VPS或Docker等</p>
-<h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><p>优点：简单，可以搭建私人网盘（不走服务器流量）。</p>
-<p>缺点：网盘速度不稳定，需要虚拟主机。</p>
-<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><p>算了，不码字了。在网上找了一篇不错的：<a href="https://51.ruyo.net/9946.html" target="_blank" rel="noopener">OneIndex部署教程，利用OneDrive打造专属分享型网盘</a></p>
-<h2 id="关于使用postman调用api"><a href="#关于使用postman调用api" class="headerlink" title="关于使用postman调用api"></a>关于使用postman调用api</h2><h3 id="准备工具-1"><a href="#准备工具-1" class="headerlink" title="准备工具"></a>准备工具</h3><p>postman、client_id、client_sercret</p>
-<h3 id="优缺点-1"><a href="#优缺点-1" class="headerlink" title="优缺点"></a>优缺点</h3><p>优点：更高级更安全的api调用方法</p>
-<p>缺点：复杂，postman全英文（没有语言选项），非自主式调用api（即不会自动调用）</p>
-<h3 id="开始-1"><a href="#开始-1" class="headerlink" title="开始"></a>开始</h3><p>链接：<a href="https://www.acebacg.top/2020/04/23/关于使用postman调用api/" target="_blank" rel="noopener">关于使用postman调用api</a></p>
-<h2 id="关于使用GitHub调用api"><a href="#关于使用GitHub调用api" class="headerlink" title="关于使用GitHub调用api"></a>关于使用GitHub调用api</h2><h3 id="准备工具-2"><a href="#准备工具-2" class="headerlink" title="准备工具"></a>准备工具</h3><p>GitHub账号</p>
-<h3 id="AutoApi"><a href="#AutoApi" class="headerlink" title="AutoApi"></a>AutoApi</h3><h4 id="优缺点-2"><a href="#优缺点-2" class="headerlink" title="优缺点"></a>优缺点</h4><p>优点：自主调用api，不需要除GitHub外的其他工具</p>
-<p>缺点：GitHub免费账户只有公共空间（其他人可以看到你的程序）</p>
-<h4 id="开始-2"><a href="#开始-2" class="headerlink" title="开始"></a>开始</h4><ul>
-<li><p><a href="https://github.com/wangziyingwen/Autoapi-test" target="_blank" rel="noopener">旧版</a></p>
-</li>
-<li><p><a href="https://github.com/wangziyingwen/AutoApi" target="_blank" rel="noopener">普通版</a></p>
-</li>
-<li><p><a href="https://github.com/wangziyingwen/AutoApiSecret" target="_blank" rel="noopener">加密版</a></p>
-</li>
-<li><p><a href="https://github.com/wangziyingwen/AutoApiSR" target="_blank" rel="noopener">仿人为开发版</a></p>
-</li>
-<li><p><a href="https://github.com/wangziyingwen/AutoApiS" target="_blank" rel="noopener">超级版</a>（测试）</p>
-</li>
-</ul>
-<h3 id="大佬自研"><a href="#大佬自研" class="headerlink" title="大佬自研"></a>大佬自研</h3><p><a href="https://blog.curlc.com/archives/687.html" target="_blank" rel="noopener">E5 自动订阅程序</a></p>
-<hr>
-<ul>
-<li><strong>本文作者：</strong>烟火</li>
-<li><strong>本文出处：</strong><a href="https://www.acebacg.top/" target="_blank" rel="noopener">lovelyace</a></li>
-<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>office</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于使用hexo为GitHub个人博客润色</title>
     <url>/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/</url>
     <content><![CDATA[<h1 id="关于使用hexo为GitHub个人博客润色"><a href="#关于使用hexo为GitHub个人博客润色" class="headerlink" title="关于使用hexo为GitHub个人博客润色"></a>关于使用hexo为GitHub个人博客润色</h1><h2 id="关于hexo"><a href="#关于hexo" class="headerlink" title="关于hexo"></a>关于hexo</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a></p>
@@ -222,6 +152,76 @@ deploy:
       </categories>
       <tags>
         <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>office365 E5订阅</title>
+    <url>/2020/04/18/office365E5%E8%AE%A2%E9%98%85/</url>
+    <content><![CDATA[<h1 id="office365-E5订阅"><a href="#office365-E5订阅" class="headerlink" title="office365 E5订阅"></a>office365 E5订阅</h1><h2 id="Office-365-开发人员计划"><a href="#Office-365-开发人员计划" class="headerlink" title="Office 365 开发人员计划"></a>Office 365 开发人员计划</h2><p>Microsoft为了给开发人员提供更好的开发环境，发布了<a href="https://developer.microsoft.com/zh-cn/office" target="_blank" rel="noopener">Office 365 开发人员计划</a>。在该计划中，会为开发者免费提供长达90天的E5订阅（目前）。</p>
+<p>该订阅创造了一个虚拟的沙盒环境（独立于外部网络环境）。在这个虚拟的沙盒中，Microsoft提供了许许多多的软件和开发环境。这便是office365 E5订阅。</p>
+<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/143345.jpg" alt></p>
+<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/143404.jpg" alt></p>
+<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/143225.jpg" alt></p>
+<h2 id="开始之前"><a href="#开始之前" class="headerlink" title="开始之前"></a>开始之前</h2><h3 id="需要准备的"><a href="#需要准备的" class="headerlink" title="需要准备的"></a>需要准备的</h3><ul>
+<li>一个Microsoft个人账号</li>
+<li>一个支持你浏览google（例）的方法</li>
+<li>一个可以正常使用的手机号（用于接收验证码）</li>
+<li>一个支持你看懂英文的方法（自带或者扩充）</li>
+</ul>
+<h2 id="怎么获得office365-E5订阅"><a href="#怎么获得office365-E5订阅" class="headerlink" title="怎么获得office365 E5订阅"></a>怎么获得office365 E5订阅</h2><p>打开<a href="https://developer.microsoft.com/zh-cn/office" target="_blank" rel="noopener">Office 365 开发人员计划</a>登陆并填写基本信息，全部勾选点击下一步</p>
+<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/144444.jpg" alt></p>
+<p>勾选你需要的产品功能（建议产品栏全部勾选），下一步</p>
+<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/144730.jpg" alt></p>
+<p>点击设置订阅，继续填写，然后继续</p>
+<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/145624.jpg" alt></p>
+<p>输入电话号码，继续（住：此时你需要可以访问google（例）的网络）</p>
+<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/151434.jpg" alt></p>
+<p>成功后，恭喜你获得三个月的office365 E5订阅</p>
+<p><img src="/2020/04/18/office365E5%E8%AE%A2%E9%98%85/152640.jpg" alt></p>
+<h1 id="关于office365-E5调用api保持活跃度"><a href="#关于office365-E5调用api保持活跃度" class="headerlink" title="关于office365 E5调用api保持活跃度"></a>关于office365 E5调用api保持活跃度</h1><h2 id="开始之前-1"><a href="#开始之前-1" class="headerlink" title="开始之前"></a>开始之前</h2><p><strong>只要你不是开发人员，就不一定会免费自动续期</strong>，只能说续期的<strong>可能</strong>大了一点！</p>
+<h2 id="什么是api"><a href="#什么是api" class="headerlink" title="什么是api"></a>什么是api</h2><p>对于不想百度的小伙伴，我在这里提供了有关api的一些问题。</p>
+<p>api是指<em>软件系统不同组成部分衔接的约定</em>，也就是一个软件可以通过api接口访问另一个软件的相关程序。</p>
+<h2 id="为什么调用api有可能为office365-E5续期"><a href="#为什么调用api有可能为office365-E5续期" class="headerlink" title="为什么调用api有可能为office365 E5续期"></a>为什么调用api有可能为office365 E5续期</h2><p>之前我提到了，office365开发人员计划是用Microsoft提供给开发人员的福利，所以只要证明你是<em>“开发人员”</em>Microsoft就会为你续期。</p>
+<p>开发人员是来开发软件的！既然我们不是来为Microsoft开发软件的，那么必须或者至少需要模仿他们的做法，或者让Microsoft认为你在开发软件，而api，便是开发软件有可能用到的。</p>
+<p>api可以让开发人员在不需要打开Microsoft官网就可以开发软件成为可能。</p>
+<h2 id="关于使用OneIndex调用api"><a href="#关于使用OneIndex调用api" class="headerlink" title="关于使用OneIndex调用api"></a>关于使用OneIndex调用api</h2><p>在OneIndex普及的现在还能相信OneIndex的活跃度吗？</p>
+<h3 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h3><p>虚拟主机（php&gt;5.5）、VPS或Docker等</p>
+<h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><p>优点：简单，可以搭建私人网盘（不走服务器流量）。</p>
+<p>缺点：网盘速度不稳定，需要虚拟主机。</p>
+<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><p>算了，不码字了。在网上找了一篇不错的：<a href="https://51.ruyo.net/9946.html" target="_blank" rel="noopener">OneIndex部署教程，利用OneDrive打造专属分享型网盘</a></p>
+<h2 id="关于使用postman调用api"><a href="#关于使用postman调用api" class="headerlink" title="关于使用postman调用api"></a>关于使用postman调用api</h2><h3 id="准备工具-1"><a href="#准备工具-1" class="headerlink" title="准备工具"></a>准备工具</h3><p>postman、client_id、client_sercret</p>
+<h3 id="优缺点-1"><a href="#优缺点-1" class="headerlink" title="优缺点"></a>优缺点</h3><p>优点：更高级更安全的api调用方法</p>
+<p>缺点：复杂，postman全英文（没有语言选项），非自主式调用api（即不会自动调用）</p>
+<h3 id="开始-1"><a href="#开始-1" class="headerlink" title="开始"></a>开始</h3><p>链接：<a href="https://www.acebacg.top/2020/04/23/关于使用postman调用api/" target="_blank" rel="noopener">关于使用postman调用api</a></p>
+<h2 id="关于使用GitHub调用api"><a href="#关于使用GitHub调用api" class="headerlink" title="关于使用GitHub调用api"></a>关于使用GitHub调用api</h2><h3 id="准备工具-2"><a href="#准备工具-2" class="headerlink" title="准备工具"></a>准备工具</h3><p>GitHub账号</p>
+<h3 id="AutoApi"><a href="#AutoApi" class="headerlink" title="AutoApi"></a>AutoApi</h3><h4 id="优缺点-2"><a href="#优缺点-2" class="headerlink" title="优缺点"></a>优缺点</h4><p>优点：自主调用api，不需要除GitHub外的其他工具</p>
+<p>缺点：GitHub免费账户只有公共空间（其他人可以看到你的程序）</p>
+<h4 id="开始-2"><a href="#开始-2" class="headerlink" title="开始"></a>开始</h4><ul>
+<li><p><a href="https://github.com/wangziyingwen/Autoapi-test" target="_blank" rel="noopener">旧版</a></p>
+</li>
+<li><p><a href="https://github.com/wangziyingwen/AutoApi" target="_blank" rel="noopener">普通版</a></p>
+</li>
+<li><p><a href="https://github.com/wangziyingwen/AutoApiSecret" target="_blank" rel="noopener">加密版</a></p>
+</li>
+<li><p><a href="https://github.com/wangziyingwen/AutoApiSR" target="_blank" rel="noopener">仿人为开发版</a></p>
+</li>
+<li><p><a href="https://github.com/wangziyingwen/AutoApiS" target="_blank" rel="noopener">超级版</a>（测试）</p>
+</li>
+</ul>
+<h3 id="大佬自研"><a href="#大佬自研" class="headerlink" title="大佬自研"></a>大佬自研</h3><p><a href="https://blog.curlc.com/archives/687.html" target="_blank" rel="noopener">E5 自动订阅程序</a></p>
+<hr>
+<ul>
+<li><strong>本文作者：</strong>烟火</li>
+<li><strong>本文出处：</strong><a href="https://www.acebacg.top/" target="_blank" rel="noopener">lovelyace</a></li>
+<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>office</tag>
       </tags>
   </entry>
   <entry>
