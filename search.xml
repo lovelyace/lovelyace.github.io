@@ -132,6 +132,75 @@
       </tags>
   </entry>
   <entry>
+    <title>关于使用postman调用api</title>
+    <url>/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/</url>
+    <content><![CDATA[<h1 id="关于使用postman调用api"><a href="#关于使用postman调用api" class="headerlink" title="关于使用postman调用api"></a>关于使用postman调用api</h1><p>关于office365 E5我已经再上一篇文章里提到了，在这里就不重复了（<a href="https://www.acebacg.top/2020/04/18/office365E5订阅/" target="_blank" rel="noopener">传送门</a>）</p>
+<h2 id="在Azure注册应用"><a href="#在Azure注册应用" class="headerlink" title="在Azure注册应用"></a>在Azure注册应用</h2><p>打开并登录Azure门户</p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172408.jpg" alt></p>
+<p>名称随意，重定向URL：</p>
+<p><code>https://app.getpostman.com/oauth2/callback</code></p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172508.jpg" alt></p>
+<p>记住client_id和client_secret</p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173005.jpg" alt></p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173052.jpg" alt></p>
+<h2 id="将信息导入postman"><a href="#将信息导入postman" class="headerlink" title="将信息导入postman"></a>将信息导入postman</h2><p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/142115.jpg" alt></p>
+<p>点击Import–Import From Link导入</p>
+<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/144400.jpg" alt></p>
+<p>选择刚加入的Microsoft Graph environment。之后点击右侧眼睛图形，然后点击Edit</p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/174201.jpg" alt></p>
+<p>输入信息</p>
+<pre><code>Callback URL: https://app.getpostman.com/oauth2/callback
+Auth URL: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
+Client ID: ?
+Client Secret: ?
+Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
+<p>接着导入(Import–Import From Link)</p>
+<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json</code><br><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171518.jpg" alt></p>
+<p>会出现一个Microsoft Graph的集合</p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171724.jpg" alt></p>
+<p>点击Edit</p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171903.jpg" alt></p>
+<p>点击Get New Access Token，输入信息。</p>
+<pre><code>Token Name: ?
+Callback URL: https://app.getpostman.com/oauth2/callback
+Auth URL: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
+Client ID: ?
+Client Secret: ?
+Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173756.jpg" alt></p>
+<p>点击Request Token，登录office365 E5账号</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>选择Microsoft Graph集合–On Behalf of a User集合–Mail集合–Get my messages–Authorization</p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175117.jpg" alt></p>
+<p>更改type为OAuth 2.0</p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175306.jpg" alt></p>
+<p>依次点击Get New Access Token–Request Token–登录–Use Token–Send</p>
+<p>如果你在下方给出的信息<strong>不是</strong></p>
+<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175740.jpg" alt></p>
+<p>那么恭喜你，postman已经与Microsoft Graph通过api相连</p>
+<h2 id="本文参考"><a href="#本文参考" class="headerlink" title="本文参考"></a>本文参考</h2><p><a href="https://docs.microsoft.com/zh-cn/graph/use-postman?context=graph%2Fapi%2F1.0&view=graph-rest-1.0" target="_blank" rel="noopener">结合使用 Postman 和 Microsoft Graph API</a></p>
+<p><a href="https://fungit.org/2020/Office365-e5-Try-to-Stay-Active-Using-postman-Call-api/" target="_blank" rel="noopener">office365-e5使用postman调用api试保持活跃</a></p>
+<p><a href="https://github.com/chenxizhang/office365dev/blob/master/docs/graph-tools.md" target="_blank" rel="noopener">通过第三方工具体验Micrsooft Graph</a></p>
+<p>以上网站均为<strong>参考</strong>内容。</p>
+<hr>
+<ul>
+<li><strong>本文作者：</strong>烟火</li>
+<li><strong>本文出处：</strong><a href="https://www.acebacg.top/" target="_blank" rel="noopener">lovelyace</a></li>
+<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>office</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于使用hexo为GitHub个人博客润色</title>
     <url>/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/</url>
     <content><![CDATA[<h1 id="关于使用hexo为GitHub个人博客润色"><a href="#关于使用hexo为GitHub个人博客润色" class="headerlink" title="关于使用hexo为GitHub个人博客润色"></a>关于使用hexo为GitHub个人博客润色</h1><h2 id="关于hexo"><a href="#关于hexo" class="headerlink" title="关于hexo"></a>关于hexo</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a></p>
@@ -222,75 +291,6 @@ deploy:
       </categories>
       <tags>
         <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于使用postman调用api</title>
-    <url>/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/</url>
-    <content><![CDATA[<h1 id="关于使用postman调用api"><a href="#关于使用postman调用api" class="headerlink" title="关于使用postman调用api"></a>关于使用postman调用api</h1><p>关于office365 E5我已经再上一篇文章里提到了，在这里就不重复了（<a href="https://www.acebacg.top/2020/04/18/office365E5订阅/" target="_blank" rel="noopener">传送门</a>）</p>
-<h2 id="在Azure注册应用"><a href="#在Azure注册应用" class="headerlink" title="在Azure注册应用"></a>在Azure注册应用</h2><p>打开并登录Azure门户</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172408.jpg" alt></p>
-<p>名称随意，重定向URL：</p>
-<p><code>https://app.getpostman.com/oauth2/callback</code></p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172508.jpg" alt></p>
-<p>记住client_id和client_secret</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173005.jpg" alt></p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173052.jpg" alt></p>
-<h2 id="将信息导入postman"><a href="#将信息导入postman" class="headerlink" title="将信息导入postman"></a>将信息导入postman</h2><p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/142115.jpg" alt></p>
-<p>点击Import–Import From Link导入</p>
-<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/144400.jpg" alt></p>
-<p>选择刚加入的Microsoft Graph environment。之后点击右侧眼睛图形，然后点击Edit</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/174201.jpg" alt></p>
-<p>输入信息</p>
-<pre><code>Callback URL: https://app.getpostman.com/oauth2/callback
-Auth URL: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
-Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
-Client ID: ?
-Client Secret: ?
-Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
-<p>接着导入(Import–Import From Link)</p>
-<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json</code><br><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171518.jpg" alt></p>
-<p>会出现一个Microsoft Graph的集合</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171724.jpg" alt></p>
-<p>点击Edit</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171903.jpg" alt></p>
-<p>点击Get New Access Token，输入信息。</p>
-<pre><code>Token Name: ?
-Callback URL: https://app.getpostman.com/oauth2/callback
-Auth URL: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
-Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
-Client ID: ?
-Client Secret: ?
-Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173756.jpg" alt></p>
-<p>点击Request Token，登录office365 E5账号</p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>选择Microsoft Graph集合–On Behalf of a User集合–Mail集合–Get my messages–Authorization</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175117.jpg" alt></p>
-<p>更改type为OAuth 2.0</p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175306.jpg" alt></p>
-<p>依次点击Get New Access Token–Request Token–登录–Use Token–Send</p>
-<p>如果你在下方给出的信息<strong>不是</strong></p>
-<p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175740.jpg" alt></p>
-<p>那么恭喜你，postman已经与Microsoft Graph通过api相连</p>
-<h2 id="本文参考"><a href="#本文参考" class="headerlink" title="本文参考"></a>本文参考</h2><p><a href="https://docs.microsoft.com/zh-cn/graph/use-postman?context=graph%2Fapi%2F1.0&view=graph-rest-1.0" target="_blank" rel="noopener">结合使用 Postman 和 Microsoft Graph API</a></p>
-<p><a href="https://fungit.org/2020/Office365-e5-Try-to-Stay-Active-Using-postman-Call-api/" target="_blank" rel="noopener">office365-e5使用postman调用api试保持活跃</a></p>
-<p><a href="https://github.com/chenxizhang/office365dev/blob/master/docs/graph-tools.md" target="_blank" rel="noopener">通过第三方工具体验Micrsooft Graph</a></p>
-<p>以上网站均为<strong>参考</strong>内容。</p>
-<hr>
-<ul>
-<li><strong>本文作者：</strong>烟火</li>
-<li><strong>本文出处：</strong><a href="https://www.acebacg.top/" target="_blank" rel="noopener">lovelyace</a></li>
-<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>office</tag>
       </tags>
   </entry>
 </search>
