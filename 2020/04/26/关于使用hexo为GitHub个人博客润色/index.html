@@ -97,31 +97,31 @@ he,">
 <h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>打开cmd，输入</p>
 <pre><code>$ node -v
 $ npm -v</code></pre><p>检查node是否安装成功（安装成功会显示当前版本号），确认无误后输入</p>
-<pre><code>$ npm install -g hexo-cli</code></pre><p>选择一个你希望作为储存博客的文件夹（<strong>请使用英文名称</strong>），右键打开Git Bash Her，输入</p>
-<pre><code>$ hexo init  初始化文件夹</code></pre><p>然后输入</p>
+<pre><code>$ npm install -g hexo-cli</code></pre><p>选择一个你希望作为储存博客的文件夹（<strong>请使用英文名称</strong>），右键打开Git Bash Here，输入</p>
+<pre><code>$ hexo init     #初始化文件夹</code></pre><p>然后输入</p>
 <pre><code>$ npm install
 $ hexo s
-$ hexo g</code></pre><p>这是打开浏览器输入网站 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 会进入一个网站，那么安装成功</p>
-<h3 id="连接到GitHub"><a href="#连接到GitHub" class="headerlink" title="连接到GitHub"></a>连接到GitHub</h3><h4 id="配置ssh密钥"><a href="#配置ssh密钥" class="headerlink" title="配置ssh密钥"></a>配置ssh密钥</h4><p>接上一步，Ctrl+C取向本地预览，输入</p>
-<pre><code>$ cd ~/. ssh  检查本地有没有ssh密钥</code></pre><p>没有ssh密钥的话输入</p>
+$ hexo g</code></pre><p>这时打开浏览器输入网站 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 会进入一个网站，那么安装成功</p>
+<h3 id="连接到GitHub"><a href="#连接到GitHub" class="headerlink" title="连接到GitHub"></a>连接到GitHub</h3><h4 id="配置ssh密钥"><a href="#配置ssh密钥" class="headerlink" title="配置ssh密钥"></a>配置ssh密钥</h4><p>接上一步，Ctrl+C取消本地预览，输入</p>
+<pre><code>$ cd ~/. ssh     #检查本地有没有ssh密钥</code></pre><p>没有ssh密钥的话输入</p>
 <pre><code>$ git config --global user.name &quot;GitHub用户名&quot;
 $ git config --global user.email &quot;GitHub注册邮箱&quot;
 $ ssh-keygen -t rsa -C &quot;GitHub注册邮箱&quot;</code></pre><p>会提示输入密码，但不建议设置密码，直接回车即可</p>
 <p>打开C:\Users\用户名\ .ssh文件夹，用记事本打开id_rsa.pub文件，复制全部内容</p>
-<p>登录到GitHub，选择setting–SSH and GPG keys–New SSH key</p>
+<p>登录到GitHub，选择setting—–SSH and GPG keys—–New SSH key</p>
 <p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/125845.png" alt></p>
 <p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/130046.png" alt></p>
 <p>Title随意，将ssh密钥复制到Key栏</p>
 <p>检查链接是否成功</p>
 <pre><code>$ ssh -T git@github.com</code></pre><p>输入yes，回车，如果出现</p>
-<pre><code>Hi GitHub用户名! You&#39;ve successfully authenticated, but GitHub does not provide shell access</code></pre><p>则ssh密钥配置成功</p>
+<pre><code>Hi &quot;GitHub用户名!&quot; You&#39;ve successfully authenticated, but GitHub does not provide shell access</code></pre><p>则ssh密钥配置成功</p>
 <h4 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h4><p>用记事本打开博客根目录下的_config.yml</p>
 <p>更改最后的数据（<strong>冒号后有空格！！！</strong>）</p>
 <pre><code># Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: GitHub仓库地址（使用ssh）
+  repo: GitHub仓库地址   #使用ssh
   branch: master</code></pre><hr>
 <h5 id="repo获取"><a href="#repo获取" class="headerlink" title="repo获取"></a>repo获取</h5><p>登录GitHub，打开在GitHub创建的博客仓库</p>
 <p>点开文件上方绿色的Clone or download</p>
@@ -135,7 +135,7 @@ deploy:
 <h2 id="在GitHub中添加你的域名"><a href="#在GitHub中添加你的域名" class="headerlink" title="在GitHub中添加你的域名"></a>在GitHub中添加你的域名</h2><p>在GitHub中打开项目，选择setting，向下翻到GitHub Pages</p>
 <p>在Custom domain中输入你的域名地址<a href="http://www.example.com" target="_blank" rel="noopener">www.example.com</a></p>
 <p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/134632.png" alt></p>
-<h2 id="在本地博客文件夹添加CNAME记录"><a href="#在本地博客文件夹添加CNAME记录" class="headerlink" title="在本地博客文件夹添加CNAME记录"></a>在本地博客文件夹添加CNAME记录</h2><p>打开本地博客根目录–source创建一个文本文档</p>
+<h2 id="在本地博客文件夹添加CNAME记录"><a href="#在本地博客文件夹添加CNAME记录" class="headerlink" title="在本地博客文件夹添加CNAME记录"></a>在本地博客文件夹添加CNAME记录</h2><p>打开本地博客根目录—–source创建一个文本文档</p>
 <p>输入域名地址<a href="http://www.example.com" target="_blank" rel="noopener">www.example.com</a></p>
 <p>保存，将文本文档改名为CNAME（去掉.txt的后缀）</p>
 <h1 id="书写博客"><a href="#书写博客" class="headerlink" title="书写博客"></a>书写博客</h1><h2 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h2><p>在本地博客文件夹根目录打开Git Bash（或cmd）输入</p>
