@@ -74,7 +74,7 @@ http,">
 <p>名称随意，重定向URL：</p>
 <p><code>https://app.getpostman.com/oauth2/callback</code></p>
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172508.jpg" alt></p>
-<p>记住client_id和client_secret</p>
+<p>记住client_id、client_secret、tenant_id</p>
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173005.jpg" alt></p>
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173052.jpg" alt></p>
 <h2 id="将信息导入postman"><a href="#将信息导入postman" class="headerlink" title="将信息导入postman"></a>将信息导入postman</h2><p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/142115.jpg" alt></p>
@@ -85,8 +85,8 @@ http,">
 <p><img src="/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/174201.jpg" alt></p>
 <p>输入信息</p>
 <pre><code>Callback URL: https://app.getpostman.com/oauth2/callback
-Auth URL: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
-Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
+Auth URL: https://login.microsoftonline.com/#tenant_id#/oauth2/v2.0/authorize
+Access Token URL: https://login.microsoftonline.com/#tenant_id#/oauth2/v2.0/token
 Client ID: ?
 Client Secret: ?
 Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
@@ -100,8 +100,8 @@ Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</
 <p>点击Get New Access Token，输入信息。</p>
 <pre><code>Token Name: ?
 Callback URL: https://app.getpostman.com/oauth2/callback
-Auth URL: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
-Access Token URL: https://login.microsoftonline.com/common/oauth2/v2.0/token
+Auth URL: https://login.microsoftonline.com/#tenant_id#/oauth2/v2.0/authorize
+Access Token URL: https://login.microsoftonline.com/#tenant_id#/oauth2/v2.0/token
 Client ID: ?
 Client Secret: ?
 Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
