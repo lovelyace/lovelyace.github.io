@@ -109,8 +109,8 @@ $ git config --global user.email &quot;GitHub注册邮箱&quot;
 $ ssh-keygen -t rsa -C &quot;GitHub注册邮箱&quot;</code></pre><p>会提示输入密码，但不建议设置密码，直接回车即可</p>
 <p>打开C:\Users\用户名\ .ssh文件夹，用记事本打开id_rsa.pub文件，复制全部内容</p>
 <p>登录到GitHub，选择setting—–SSH and GPG keys—–New SSH key</p>
-<p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/125845.png" alt></p>
-<p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/130046.png" alt></p>
+<p><img src="https://lovelyace.herokuapp.com/share/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/125845.png" alt></p>
+<p><img src="https://lovelyace.herokuapp.com/share/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/130046.png" alt></p>
 <p>Title随意，将ssh密钥复制到Key栏</p>
 <p>检查链接是否成功</p>
 <pre><code>$ ssh -T git@github.com</code></pre><p>输入yes，回车，如果出现</p>
@@ -125,16 +125,16 @@ deploy:
   branch: master</code></pre><hr>
 <h5 id="repo获取"><a href="#repo获取" class="headerlink" title="repo获取"></a>repo获取</h5><p>登录GitHub，打开在GitHub创建的博客仓库</p>
 <p>点开文件上方绿色的Clone or download</p>
-<p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/131912.png" alt></p>
+<p><img src="https://lovelyace.herokuapp.com/share/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/131912.png" alt></p>
 <p><strong>使用ssh！！！</strong>之后点击地址栏右侧的图标复制</p>
 <hr>
 <h2 id="安装hexo-deployer-git自动部署发布工具"><a href="#安装hexo-deployer-git自动部署发布工具" class="headerlink" title="安装hexo-deployer-git自动部署发布工具"></a>安装<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>自动部署发布工具</h2><p>在本地博客文件夹根目录打开Git Bash Here，输入</p>
 <pre><code>$ npm install hexo-deployer-git  --save</code></pre><h2 id="发布到GitHub"><a href="#发布到GitHub" class="headerlink" title="发布到GitHub"></a>发布到GitHub</h2><p>在Git Bash（或cmd）中输入</p>
 <pre><code>$ hexo d -g</code></pre><h1 id="使用自定义域名"><a href="#使用自定义域名" class="headerlink" title="使用自定义域名"></a>使用自定义域名</h1><h2 id="解析域名到你的博客地址"><a href="#解析域名到你的博客地址" class="headerlink" title="解析域名到你的博客地址"></a>解析域名到你的博客地址</h2><p>打开你的域名控制台，添加CNAME记录指向你的博客域名</p>
-<p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/134044.png" alt="例"></p>
+<p><img src="https://lovelyace.herokuapp.com/share/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/134044.png" alt="例"></p>
 <h2 id="在GitHub中添加你的域名"><a href="#在GitHub中添加你的域名" class="headerlink" title="在GitHub中添加你的域名"></a>在GitHub中添加你的域名</h2><p>在GitHub中打开项目，选择setting，向下翻到GitHub Pages</p>
 <p>在Custom domain中输入你的域名地址<a href="http://www.example.com" target="_blank" rel="noopener">www.example.com</a></p>
-<p><img src="/2020/04/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/134632.png" alt></p>
+<p><img src="https://lovelyace.herokuapp.com/share/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8hexo%E4%B8%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B6%A6%E8%89%B2/134632.png" alt></p>
 <h2 id="在本地博客文件夹添加CNAME记录"><a href="#在本地博客文件夹添加CNAME记录" class="headerlink" title="在本地博客文件夹添加CNAME记录"></a>在本地博客文件夹添加CNAME记录</h2><p>打开本地博客根目录—–source创建一个文本文档</p>
 <p>输入域名地址<a href="http://www.example.com" target="_blank" rel="noopener">www.example.com</a></p>
 <p>保存，将文本文档改名为CNAME（去掉.txt的后缀）</p>
