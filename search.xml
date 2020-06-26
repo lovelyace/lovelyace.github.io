@@ -1,67 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>GitHub与私人博客搭建</title>
-    <url>/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1 id="GitHub与私人博客搭建"><a href="#GitHub与私人博客搭建" class="headerlink" title="GitHub与私人博客搭建"></a>GitHub与私人博客搭建</h1><p>GitHub是全球最大的开发人员网站，为用户提供了丰富的功能及资源，那么GitHub在网站搭建上为我们提供了什么功能呢？</p>
-<h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p>一个GitHub账号</p>
-<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>登录GitHub，点击右上角的“+”，之后点击New repository</p>
-<p><img src="https://lovelyace.herokuapp.come/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/100115.png" alt></p>
-<p>输入<code>name.github.io</code>(name为GitHub账号昵称)</p>
-<p><img src="https://lovelyace.herokuapp.come/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/102352.png" alt></p>
-<p>点击setting</p>
-<p><img src="https://lovelyace.herokuapp.come/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/103118.png" alt></p>
-<p>向下翻到GitHub Pages</p>
-<p><img src="https://lovelyace.herokuapp.come/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/103439.png" alt></p>
-<p>绿色方框内的网址便是你的博客地址，选择Choose a theme可以在GitHub提供的主题中选取一个主题。</p>
-<h2 id="评价"><a href="#评价" class="headerlink" title="评价"></a>评价</h2><p>GitHub提供的网站虽然过程简单，但写文章的话很不友好，除非习惯了使用HTML写文章。不过可以通过hexo、jekyll等第三方软件进行编辑，然后上传到GitHub，让你的博客更加美观。</p>
-<p>不过免费带来的其他问题随之而来，<strong>GitHub免费账户的项目是开源的！！！</strong>别人甚至可以那你的文件进行二次创作，或者更改、恶搞。</p>
-<p>如果你放心自己的项目处于开源状态，那么下一步：<a href="https://www.acebacg.top/2020/04/26/关于使用hexo为GitHub个人博客润色/" target="_blank" rel="noopener">关于使用hexo为GitHub个人博客润色</a></p>
-<p>如果你不放心自己的项目处于开源状态，那么请购买GitHub会员使用私人仓库，或者<a href="https://www.acebacg.top/404/" target="_blank" rel="noopener">使用虚拟主机进行私人博客搭建</a></p>
-<hr>
-<ul>
-<li><strong>本文作者：</strong>烟火</li>
-<li><strong>本文出处：</strong><a href="https://www.acebacg.top/2020/04/23/GitHub与私人博客搭建/" target="_blank" rel="noopener">lovelyace</a></li>
-<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你好，新的生活</title>
-    <url>/2020/04/17/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%96%B0%E7%9A%84%E7%94%9F%E6%B4%BB/</url>
-    <content><![CDATA[<p>这是我在本网站的第一篇文章，也是我的一次在网上发表文章，尽管是我自己的网站。</p>
-<p>这篇文章，没有什么华丽的辞藻，没有什么技术指导。</p>
-<p>有的，是我纪念这篇文章的内心。</p>
-<p>它可能没有什么出色的地方，它可能算不上一篇规范的文章，但这一切都改变不了我对这篇“文章”的感情。</p>
-<h3 id="你好！新的生活"><a href="#你好！新的生活" class="headerlink" title="你好！新的生活"></a>你好！新的生活</h3><p><img src="https://lovelyace.herokuapp.com/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%96%B0%E7%9A%84%E7%94%9F%E6%B4%BB/e60a1eac62838ab01dc4bcf54bb3090b.jpg" alt></p>
-<p>有的时候，喜悦和悲伤会交织在一起，而你却不得不去接受。或许大家，都是那么长大的吧。</p>
-<p>没有了童年的无忧无虑，没有了童年一起玩耍的伙伴。</p>
-<p>剩下你，在新的环境里苟延残喘，不想去接受，却又必须接受。</p>
-<p>怎么才能在新的环境下生存呢？构建新的友谊？独自一人承受？</p>
-<p>在这现实的世界里，我们，这些最普通的人，究竟有多少自由呢？</p>
-<hr>
-<ul>
-<li><strong>本文作者：</strong>烟火</li>
-<li><strong>本文出处：</strong><a href="https://www.acebacg.top/2020/04/17/你好，新的生活/" target="_blank" rel="noopener">lovelyace</a></li>
-<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>hello blog</category>
-      </categories>
-      <tags>
-        <tag>hello blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>office365 E5订阅</title>
     <url>/2020/04/18/office365E5%E8%AE%A2%E9%98%85/</url>
     <content><![CDATA[<h1 id="office365-E5订阅"><a href="#office365-E5订阅" class="headerlink" title="office365 E5订阅"></a>office365 E5订阅</h1><h2 id="Office-365-开发人员计划"><a href="#Office-365-开发人员计划" class="headerlink" title="Office 365 开发人员计划"></a>Office 365 开发人员计划</h2><p>Microsoft为了给开发人员提供更好的开发环境，发布了<a href="https://developer.microsoft.com/zh-cn/office" target="_blank" rel="noopener">Office 365 开发人员计划</a>。在该计划中，会为开发者免费提供长达90天的E5订阅（目前）。</p>
@@ -132,60 +71,55 @@
       </tags>
   </entry>
   <entry>
-    <title>关于使用postman调用api</title>
-    <url>/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/</url>
-    <content><![CDATA[<h1 id="关于使用postman调用api"><a href="#关于使用postman调用api" class="headerlink" title="关于使用postman调用api"></a>关于使用postman调用api</h1><p>关于office365 E5我已经再上一篇文章里提到了，在这里就不重复了（<a href="https://www.acebacg.top/2020/04/18/office365E5订阅/" target="_blank" rel="noopener">传送门</a>）</p>
-<h2 id="在Azure注册应用"><a href="#在Azure注册应用" class="headerlink" title="在Azure注册应用"></a>在Azure注册应用</h2><p>打开并登录Azure门户</p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172408.jpg" alt></p>
-<p>名称随意，重定向URL：</p>
-<p><code>https://app.getpostman.com/oauth2/callback</code></p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172508.jpg" alt></p>
-<p>记住client_id、client_secret、tenant_id</p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173005.jpg" alt></p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173052.jpg" alt></p>
-<h2 id="将信息导入postman"><a href="#将信息导入postman" class="headerlink" title="将信息导入postman"></a>将信息导入postman</h2><p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/142115.jpg" alt></p>
-<p>点击Import–Import From Link导入</p>
-<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/144400.jpg" alt></p>
-<p>选择刚加入的Microsoft Graph environment。之后点击右侧眼睛图形，然后点击Edit</p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/174201.jpg" alt></p>
-<p>输入信息</p>
-<pre><code>Client ID: ?
-Tenant ID: ?
-Client Secret: ?</code></pre><p>“?”自行补充</p>
-<p>接着导入(Import–Import From Link)</p>
-<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json</code></p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171518.jpg" alt></p>
-<p>会出现一个Microsoft Graph的集合</p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171724.jpg" alt></p>
-<p>点击Edit</p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171903.jpg" alt></p>
-<p>点击Get New Access Token，输入信息。</p>
-<pre><code>Token Name: ?
-Callback URL: https://app.getpostman.com/oauth2/callback
-Auth URL: https://login.microsoftonline.com/#tenant_id#/oauth2/v2.0/authorize
-Access Token URL: https://login.microsoftonline.com/#tenant_id#/oauth2/v2.0/token
-Client ID: ?
-Client Secret: ?
-Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173756.jpg" alt></p>
-<p>点击Request Token，登录office365 E5账号</p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>选择Microsoft Graph集合–On Behalf of a User集合–Mail集合–Get my messages–Authorization</p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175117.jpg" alt></p>
-<p>更改type为OAuth 2.0</p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175306.jpg" alt></p>
-<p>依次点击Get New Access Token–Request Token–登录–Use Token–Send</p>
-<p>如果你在下方给出的信息<strong>不是</strong></p>
-<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175740.jpg" alt></p>
-<p>那么恭喜你，postman已经与Microsoft Graph通过api相连</p>
-<h2 id="本文参考"><a href="#本文参考" class="headerlink" title="本文参考"></a>本文参考</h2><p><a href="https://docs.microsoft.com/zh-cn/graph/use-postman?context=graph%2Fapi%2F1.0&view=graph-rest-1.0" target="_blank" rel="noopener">结合使用 Postman 和 Microsoft Graph API</a></p>
-<p><a href="https://fungit.org/2020/Office365-e5-Try-to-Stay-Active-Using-postman-Call-api/" target="_blank" rel="noopener">office365-e5使用postman调用api试保持活跃</a></p>
-<p><a href="https://github.com/chenxizhang/office365dev/blob/master/docs/graph-tools.md" target="_blank" rel="noopener">通过第三方工具体验Micrsooft Graph</a></p>
-<p>以上网站均为<strong>参考</strong>内容。</p>
+    <title>你好，新的生活</title>
+    <url>/2020/04/17/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%96%B0%E7%9A%84%E7%94%9F%E6%B4%BB/</url>
+    <content><![CDATA[<p>这是我在本网站的第一篇文章，也是我的一次在网上发表文章，尽管是我自己的网站。</p>
+<p>这篇文章，没有什么华丽的辞藻，没有什么技术指导。</p>
+<p>有的，是我纪念这篇文章的内心。</p>
+<p>它可能没有什么出色的地方，它可能算不上一篇规范的文章，但这一切都改变不了我对这篇“文章”的感情。</p>
+<h3 id="你好！新的生活"><a href="#你好！新的生活" class="headerlink" title="你好！新的生活"></a>你好！新的生活</h3><p><img src="https://lovelyace.herokuapp.com/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%96%B0%E7%9A%84%E7%94%9F%E6%B4%BB/e60a1eac62838ab01dc4bcf54bb3090b.jpg" alt></p>
+<p>有的时候，喜悦和悲伤会交织在一起，而你却不得不去接受。或许大家，都是那么长大的吧。</p>
+<p>没有了童年的无忧无虑，没有了童年一起玩耍的伙伴。</p>
+<p>剩下你，在新的环境里苟延残喘，不想去接受，却又必须接受。</p>
+<p>怎么才能在新的环境下生存呢？构建新的友谊？独自一人承受？</p>
+<p>在这现实的世界里，我们，这些最普通的人，究竟有多少自由呢？</p>
 <hr>
 <ul>
 <li><strong>本文作者：</strong>烟火</li>
-<li><strong>本文出处：</strong><a href="https://www.acebacg.top/2020/04/23/关于使用postman调用api/" target="_blank" rel="noopener">lovelyace</a></li>
+<li><strong>本文出处：</strong><a href="https://www.acebacg.top/2020/04/17/你好，新的生活/" target="_blank" rel="noopener">lovelyace</a></li>
+<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>hello blog</category>
+      </categories>
+      <tags>
+        <tag>hello blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub与私人博客搭建</title>
+    <url>/2020/04/23/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="GitHub与私人博客搭建"><a href="#GitHub与私人博客搭建" class="headerlink" title="GitHub与私人博客搭建"></a>GitHub与私人博客搭建</h1><p>GitHub是全球最大的开发人员网站，为用户提供了丰富的功能及资源，那么GitHub在网站搭建上为我们提供了什么功能呢？</p>
+<h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p>一个GitHub账号</p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>登录GitHub，点击右上角的“+”，之后点击New repository</p>
+<p><img src="https://lovelyace.herokuapp.come/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/100115.png" alt></p>
+<p>输入<code>name.github.io</code>(name为GitHub账号昵称)</p>
+<p><img src="https://lovelyace.herokuapp.come/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/102352.png" alt></p>
+<p>点击setting</p>
+<p><img src="https://lovelyace.herokuapp.come/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/103118.png" alt></p>
+<p>向下翻到GitHub Pages</p>
+<p><img src="https://lovelyace.herokuapp.come/GitHub%E4%B8%8E%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/103439.png" alt></p>
+<p>绿色方框内的网址便是你的博客地址，选择Choose a theme可以在GitHub提供的主题中选取一个主题。</p>
+<h2 id="评价"><a href="#评价" class="headerlink" title="评价"></a>评价</h2><p>GitHub提供的网站虽然过程简单，但写文章的话很不友好，除非习惯了使用HTML写文章。不过可以通过hexo、jekyll等第三方软件进行编辑，然后上传到GitHub，让你的博客更加美观。</p>
+<p>不过免费带来的其他问题随之而来，<strong>GitHub免费账户的项目是开源的！！！</strong>别人甚至可以那你的文件进行二次创作，或者更改、恶搞。</p>
+<p>如果你放心自己的项目处于开源状态，那么下一步：<a href="https://www.acebacg.top/2020/04/26/关于使用hexo为GitHub个人博客润色/" target="_blank" rel="noopener">关于使用hexo为GitHub个人博客润色</a></p>
+<p>如果你不放心自己的项目处于开源状态，那么请购买GitHub会员使用私人仓库，或者<a href="https://www.acebacg.top/404/" target="_blank" rel="noopener">使用虚拟主机进行私人博客搭建</a></p>
+<hr>
+<ul>
+<li><strong>本文作者：</strong>烟火</li>
+<li><strong>本文出处：</strong><a href="https://www.acebacg.top/2020/04/23/GitHub与私人博客搭建/" target="_blank" rel="noopener">lovelyace</a></li>
 <li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
 </ul>
 <hr>
@@ -194,7 +128,7 @@ Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</
         <category>技术探讨</category>
       </categories>
       <tags>
-        <tag>office</tag>
+        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -317,6 +251,72 @@ deploy:
       </categories>
       <tags>
         <tag>文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于使用postman调用api</title>
+    <url>/2020/04/23/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/</url>
+    <content><![CDATA[<h1 id="关于使用postman调用api"><a href="#关于使用postman调用api" class="headerlink" title="关于使用postman调用api"></a>关于使用postman调用api</h1><p>关于office365 E5我已经再上一篇文章里提到了，在这里就不重复了（<a href="https://www.acebacg.top/2020/04/18/office365E5订阅/" target="_blank" rel="noopener">传送门</a>）</p>
+<h2 id="在Azure注册应用"><a href="#在Azure注册应用" class="headerlink" title="在Azure注册应用"></a>在Azure注册应用</h2><p>打开并登录Azure门户</p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172408.jpg" alt></p>
+<p>名称随意，重定向URL：</p>
+<p><code>https://app.getpostman.com/oauth2/callback</code></p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/172508.jpg" alt></p>
+<p>记住client_id、client_secret、tenant_id</p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173005.jpg" alt></p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173052.jpg" alt></p>
+<h2 id="将信息导入postman"><a href="#将信息导入postman" class="headerlink" title="将信息导入postman"></a>将信息导入postman</h2><p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/142115.jpg" alt></p>
+<p>点击Import–Import From Link导入</p>
+<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json</code></p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/144400.jpg" alt></p>
+<p>选择刚加入的Microsoft Graph environment。之后点击右侧眼睛图形，然后点击Edit</p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/174201.jpg" alt></p>
+<p>输入信息</p>
+<pre><code>Client ID: ?
+Tenant ID: ?
+Client Secret: ?</code></pre><p>“?”自行补充</p>
+<p>接着导入(Import–Import From Link)</p>
+<p><code>https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json</code></p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171518.jpg" alt></p>
+<p>会出现一个Microsoft Graph的集合</p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171724.jpg" alt></p>
+<p>点击Edit</p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/171903.jpg" alt></p>
+<p>点击Get New Access Token，输入信息。</p>
+<pre><code>Token Name: ?
+Callback URL: https://app.getpostman.com/oauth2/callback
+Auth URL: https://login.microsoftonline.com/#tenant_id#/oauth2/v2.0/authorize
+Access Token URL: https://login.microsoftonline.com/#tenant_id#/oauth2/v2.0/token
+Client ID: ?
+Client Secret: ?
+Scope: https://graph.microsoft.com/.default</code></pre><p>“?”自行补充</p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/173756.jpg" alt></p>
+<p>点击Request Token，登录office365 E5账号</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>选择Microsoft Graph集合–On Behalf of a User集合–Mail集合–Get my messages–Authorization</p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175117.jpg" alt></p>
+<p>更改type为OAuth 2.0</p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175306.jpg" alt></p>
+<p>依次点击Get New Access Token–Request Token–登录–Use Token–Send</p>
+<p>如果你在下方给出的信息<strong>不是</strong></p>
+<p><img src="https://lovelyace.herokuapp.com/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8postman%E8%B0%83%E7%94%A8api/175740.jpg" alt></p>
+<p>那么恭喜你，postman已经与Microsoft Graph通过api相连</p>
+<h2 id="本文参考"><a href="#本文参考" class="headerlink" title="本文参考"></a>本文参考</h2><p><a href="https://docs.microsoft.com/zh-cn/graph/use-postman?context=graph%2Fapi%2F1.0&view=graph-rest-1.0" target="_blank" rel="noopener">结合使用 Postman 和 Microsoft Graph API</a></p>
+<p><a href="https://fungit.org/2020/Office365-e5-Try-to-Stay-Active-Using-postman-Call-api/" target="_blank" rel="noopener">office365-e5使用postman调用api试保持活跃</a></p>
+<p><a href="https://github.com/chenxizhang/office365dev/blob/master/docs/graph-tools.md" target="_blank" rel="noopener">通过第三方工具体验Micrsooft Graph</a></p>
+<p>以上网站均为<strong>参考</strong>内容。</p>
+<hr>
+<ul>
+<li><strong>本文作者：</strong>烟火</li>
+<li><strong>本文出处：</strong><a href="https://www.acebacg.top/2020/04/23/关于使用postman调用api/" target="_blank" rel="noopener">lovelyace</a></li>
+<li><strong>版权声明：</strong>本网站所有文章除特别声明外，均默认采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议。</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>office</tag>
       </tags>
   </entry>
 </search>
